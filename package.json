@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/forestbelton/typecalc",
   "devDependencies": {
+    "browserify": "^7.0.0",
     "gulp": "^3.8.10",
     "gulp-peg": "^0.1.2",
-    "gulp-util": "^3.0.1"
+    "gulp-util": "^3.0.1",
+    "vinyl-source-stream": "^1.0.0"
   }
 }
