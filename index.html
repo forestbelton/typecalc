@@ -27,6 +27,7 @@ textarea {
 
 #error {
     color:red;
+    height:50px;
 }
     </style>
 </head>
@@ -41,6 +42,21 @@ textarea {
             <textarea id="output" readonly></textarea>
         </div>
         <div id="error"></div>
+        <h3>examples</h3>
+        <ul class="examples">
+            <li>
+                <a href="#" class="example"
+                   data-eqn="Bool = 1 + 1">Bool</a>
+            </li>
+            <li>
+                <a href="#" class="example"
+                   data-eqn="List(a) = 1 + a * List(a)">List(a)</a>
+            </li>
+            <li>
+                <a href="#" class="example"
+                   data-eqn="Maybe(a) = 1 + a">Maybe(a)</a>
+            </li>
+        </ul>
     </div>
     <script src="built/bundle.js"></script>
 </body>

@@ -20,3 +20,17 @@ input.addEventListener('keyup', function() {
 
     output.value = generate(parsed);
 });
+
+var exs = d.querySelectorAll('.example');
+Array.prototype.forEach.call(exs, function(ex) {
+    ex.addEventListener('click', function(e) {
+        e.preventDefault();
+        input.value = ex.dataset.eqn;
+
+        var evt = new KeyboardEvent('keyup', {
+            keyCode: 13
+        });
+        input.dispatchEvent(evt);
+    });
+});
+
