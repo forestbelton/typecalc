@@ -8,7 +8,7 @@ var d = document,
     Parser = require('./built/parser'),
     generate = require('./lib/generate');
     
-input.addEventListener('keydown', function() {
+input.addEventListener('keyup', function() {
     var parsed = '';
 
     try {
